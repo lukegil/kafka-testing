@@ -14,7 +14,10 @@
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
         <spring-boot.version>1.5.9.RELEASE</spring-boot.version>
-        <powermock.version>1.6.4</powermock.version>
+        <powermock.version>1.7.4</powermock.version>
+        <kafka-streams.version>0.11.0.2</kafka-streams.version>
+        <spring-boot.version>1.5.9.RELEASE</spring-boot.version>
+        <spring-kafka.version>1.3.0.RELEASE</spring-kafka.version>
     </properties>
     <build>
         <finalName>${project.artifactId}</finalName>
@@ -231,24 +234,29 @@
         <dependency>
             <groupId>org.springframework.kafka</groupId>
             <artifactId>spring-kafka</artifactId>
-            <version>1.3.9.RELEASE</version>
+            <version>${spring-kafka.version}</version>
         </dependency>
         <dependency>
             <groupId>org.apache.kafka</groupId>
             <artifactId>kafka-streams</artifactId>
-            <version>0.11.0.2</version>
+            <version>${kafka-streams.version}</version>
         </dependency>
         <dependency>
             <groupId>org.apache.kafka</groupId>
             <artifactId>kafka-streams</artifactId>
-            <version>0.11.0.2</version>
+            <version>${kafka-streams.version}</version>
             <scope>test</scope>
             <classifier>test</classifier>
         </dependency>
         <dependency>
             <groupId>org.apache.kafka</groupId>
             <artifactId>kafka-clients</artifactId>
-            <version>0.11.0.2</version>
+            <version>${kafka-streams.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.kafka</groupId>
+            <artifactId>kafka-clients</artifactId>
+            <version>${kafka-streams.version}</version>
             <classifier>test</classifier>
             <scope>test</scope>
         </dependency>
