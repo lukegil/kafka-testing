@@ -6,18 +6,15 @@ import org.apache.kafka.common.serialization.Serdes;
 import org.apache.kafka.streams.StreamsConfig;
 import org.apache.kafka.streams.kstream.KStream;
 import org.apache.kafka.streams.kstream.KStreamBuilder;
-import org.apache.kafka.streams.state.KeyValueStore;
 import org.apache.kafka.test.ProcessorTopologyTestDriver;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.context.ApplicationContext;
-import org.springframework.kafka.annotation.KafkaBootstrapConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 import java.util.Arrays;
-import java.util.List;
 import java.util.Properties;
 
 import static org.hamcrest.CoreMatchers.equalTo;
